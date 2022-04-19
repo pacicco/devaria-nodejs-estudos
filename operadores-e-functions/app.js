@@ -9,6 +9,7 @@ const validarNumeroInformado = (numero) => {
         console.log('numero informado nao e valido');
     }
     return resultado
+
 }
 
 const validarOperador = (operador) => {
