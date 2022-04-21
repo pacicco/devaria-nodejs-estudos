@@ -6,7 +6,7 @@ const readLine = require('readline').createInterface({
 const validarNumeroInformado = (numero) => {
     const resultado = Number.parseFloat(numero);
     if (!resultado) {
-        console.log('numero informado nao e valido');
+        console.log(`numero informado nao e valido`);
     }
     return resultado
 
@@ -38,15 +38,15 @@ readLine.question('Favor informar um numero:', (numero1) => {
                     const operadorValidado = validarOperador(operador);
                     if (operadorValidado) {
                         switch (operadorValidado) {
-                            case '+': console.log('operador selecionado adicao resultado ${numeroValidado1} + ${numeroValidado2} = ${numeroValidado1} + ${numeroValidado2}');
+                            case '+': console.log(`operador selecionado adicao resultado ${numeroValidado1} + ${numeroValidado2} = ${numeroValidado1} + ${numeroValidado2}`);
                                 break;
-                            case '-': console.log('operador selecionado subtracao resultado ${numeroValidado1} - ${numeroValidado2} = ${numeroValidado1} - ${numeroValidado2}');
+                            case '-': console.log(`operador selecionado subtracao resultado ${numeroValidado1} - ${numeroValidado2} = ${numeroValidado1} - ${numeroValidado2}`);
                                 break;
-                            case '*': console.log('operador selecionado multiplicacao resultado ${numeroValidado1} * ${numeroValidado2} = ${numeroValidado1} * ${numeroValidado2}');
+                            case '*': console.log(`operador selecionado multiplicacao resultado ${numeroValidado1} * ${numeroValidado2} = ${numeroValidado1} * ${numeroValidado2}`);
                                 break;
-                            case '/': console.log('operador selecionado divisao resultado ${numeroValidado1} / ${numeroValidado2} = ${numeroValidado1} / ${numeroValidado2}');
+                            case '/': console.log(`operador selecionado divisao resultado ${numeroValidado1} / ${numeroValidado2} = ${numeroValidado1} / ${numeroValidado2}`);
                                 break;
-                            case '%': console.log('operador selecionado modulo resultado ${numeroValidado1} % ${numeroValidado2} = ${numeroValidado1} % ${numeroValidado2}');
+                            case '%': console.log(`operador selecionado modulo resultado ${numeroValidado1} % ${numeroValidado2} = ${numeroValidado1} % ${numeroValidado2}`);
                                 break;
                             default: break;
 
